@@ -35,7 +35,7 @@ class ProductController extends Controller
     {
         Product::create($request->all());
         return redirect()->route('product.index')
-                ->withSuccess('New product is added successfully.');
+                ->withSuccess('New product is added successfully. 🙂');
     }
 
     /**
@@ -65,7 +65,7 @@ class ProductController extends Controller
     {
         $product->update($request->all());
         return redirect()->back()
-                ->withSuccess('Product is updated successfully.');
+                ->withSuccess('Product is updated successfully. 🙂');
     }
 
     /**
@@ -75,6 +75,6 @@ class ProductController extends Controller
     {
         $product->delete();
         return redirect()->route('product.index')
-                ->withSuccess('Product is deleted successfully.');
+                ->withSuccess('Product is deleted successfully. 🙂');
     }
 }
